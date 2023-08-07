@@ -24,7 +24,7 @@ const main = async () => {
         break;
       case '2':
         // listar opciones
-        console.log(tareas._listado)
+        console.log(tareas.listadoArr)
         break;
     }
     await pausa()
