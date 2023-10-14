@@ -31,8 +31,17 @@ const main = async () => {
         break;
       case '2':
         // listar opciones
-        console.log(tareas.listadoArr)
+        tareas.listadoCompleto()
+        break;1
+      case '3':
+        // listar completadas
+        tareas.listarPendientesCompletadas(true)
         break;
+      case '4':
+        // listar pendientes
+        tareas.listarPendientesCompletadas(false)
+        break;
+        
     }
     guardarDB(tareas.listadoArr)
     await pausa()
